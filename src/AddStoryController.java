@@ -51,8 +51,6 @@ public class AddStoryController {
             description = descriptionTextArea.getText();
             ImportantEvent event = new ImportantEvent(date, title, description, location);
             if(event.addEvent(event)) {
-                // Update the table view in ViewStoryController
-                ViewStoryController object = new ViewStoryController();
                 Stage currentStage = (Stage) dateTextField.getScene().getWindow();
                 currentStage.close();
             }

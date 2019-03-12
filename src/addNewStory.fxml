@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddStoryController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddStoryController">
    <children>
       <Button focusTraversable="false" layoutX="18.0" layoutY="266.0" mnemonicParsing="false" onAction="#confirmClicked" text="Confirm" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="406.0" AnchorPane.topAnchor="266.0" />
       <Button focusTraversable="false" layoutX="18.0" layoutY="317.0" mnemonicParsing="false" onAction="#cancelClicked" text=" Cancel " AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="406.0" AnchorPane.topAnchor="317.0" />
@@ -14,6 +15,6 @@
       <TextField fx:id="dateTextField" layoutX="135.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="374.0" promptText="YYYY/MM/DD" AnchorPane.bottomAnchor="321.0" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="18.0" />
       <TextField fx:id="titleTextField" layoutX="135.0" layoutY="62.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="374.0" AnchorPane.bottomAnchor="277.0" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="62.0" />
       <TextField fx:id="locationTextField" layoutX="135.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="374.0" AnchorPane.bottomAnchor="233.0" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="106.0" />
-      <TextArea fx:id="descriptionTextArea" wrapText="true" layoutX="135.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="213.0" prefWidth="374.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="150.0" />
+      <TextArea fx:id="descriptionTextArea" layoutX="135.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="213.0" prefWidth="374.0" wrapText="true" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="150.0" />
    </children>
 </AnchorPane>
