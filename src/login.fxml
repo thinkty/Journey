@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="loginFXML" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.81" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+       <PasswordField fx:id="passwordField" layoutX="156.0" layoutY="247.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="237.0" AnchorPane.topAnchor="247.0" />
+       <Button fx:id="submitButton" focusTraversable="false" layoutX="369.0" layoutY="247.0" onAction="#submit" text="→" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="369.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="247.0">→</Button>
+       <Button fx:id="hintButton" focusTraversable="false" layoutX="417.0" layoutY="247.0" mnemonicParsing="false" onAction="#showHint" text=" ? " AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="417.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="247.0"> ? </Button>
+      <Label focusTraversable="false" layoutX="176.0" layoutY="122.0" text="JOURNEY" textOverrun="CLIP">
+         <font>
+            <Font name="Bell MT" size="53.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="invalidPassword" focusTraversable="false" layoutX="259.0" layoutY="288.0" opacity="0.68" text="Wrong password" textFill="#fc0101" visible="false" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="259.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="288.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+
+</AnchorPane>
