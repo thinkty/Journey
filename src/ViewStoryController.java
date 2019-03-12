@@ -12,7 +12,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -66,6 +65,7 @@ public class ViewStoryController implements Initializable {
         scrollPane.setContent(tableView);
     }
 
+
     /**
      * OnClickListener for the + sign button
      * Give a new alert that will take in needed information
@@ -84,6 +84,7 @@ public class ViewStoryController implements Initializable {
         }
         addNewStoryStage.show();
     }
+
 
     /**
      * Reload the events

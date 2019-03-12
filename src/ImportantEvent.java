@@ -5,11 +5,11 @@ import java.util.ArrayList;
 public class ImportantEvent {
 
     private ArrayList<ImportantEvent> events;
-
     public String date;          // ex: 20190311             (8 characters long)
     public String title;         // ex: mundane day=
     public String description;   // ex: I had a nice coffee; (always end with a semi colon)
     public String location;      // ex: Purdue University
+
 
     public ImportantEvent(String date, String title, String description, String location) {
         this.date = date;
@@ -17,6 +17,7 @@ public class ImportantEvent {
         this.description = description;
         this.location = location;
     }
+
 
     /**
      * The String should be in this format:
@@ -31,9 +32,11 @@ public class ImportantEvent {
         this.description = rawString.substring(rawString.indexOf(';') + 1);
     }
 
+
     public ImportantEvent() {
         super();
     }
+
 
     /**
      * Append to the events.txt file
@@ -87,6 +90,7 @@ public class ImportantEvent {
 
         return events;
     }
+
 
     /**
      * Events happened in the past should not be deleted whether it be a

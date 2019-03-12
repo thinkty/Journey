@@ -9,7 +9,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
 import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -24,6 +23,7 @@ public class LoginController implements Initializable {
     public Button submitButton;
     public Button hintButton;
     public Label invalidPassword;
+
 
     /**
      * Activate when submit button is clicked
@@ -43,6 +43,7 @@ public class LoginController implements Initializable {
             invalidPassword.setVisible(true);
         }
     }
+
 
     /**
      * Activate when hint button is clicked
