@@ -67,7 +67,7 @@ public class LoginController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        try (BufferedReader br = new BufferedReader(new FileReader("src/passcode.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src\\passcode.txt"))) {
             password = br.readLine();
             hint = br.readLine();
         } catch (IOException e) {

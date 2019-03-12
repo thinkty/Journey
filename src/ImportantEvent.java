@@ -46,7 +46,7 @@ public class ImportantEvent {
      * @return true if successful
      */
     public boolean addEvent(ImportantEvent event) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("src/events.txt", true))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("src\\events.txt", true))) {
             bw.write(event.toString());
 
         } catch (IOException e) {
@@ -72,7 +72,7 @@ public class ImportantEvent {
     public ArrayList<ImportantEvent> loadEvents() {
         events = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader("src/events.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src\\events.txt"))) {
             String buffer;
             while ((buffer = br.readLine()) != null) {
                 events.add(new ImportantEvent(buffer));
