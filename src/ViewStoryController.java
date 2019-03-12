@@ -5,10 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -61,6 +58,21 @@ public class ViewStoryController implements Initializable {
         tableView = new TableView<>();
         tableView.setItems(tableEvents);
         tableView.getColumns().addAll(dateColumn, titleColumn, locationColumn, descriptionColumn);
+        // Action when clicked on the row (Lambda)
+        tableView.setRowFactory(e1 -> {
+            TableRow<ImportantEvent> row = new TableRow<>();
+            row.setOnMouseClicked(e2 -> {
+                if (e2.getClickCount() == 2 && !(row.isEmpty())) {
+                    ImportantEvent event = row.getItem();
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle(null);
+                    alert.setHeaderText(null);
+                    alert.setContentText(event.description);
+                    alert.showAndWait();
+                }
+            });
+            return row;
+        });
 
         scrollPane.setContent(tableView);
     }
