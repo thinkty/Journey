@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewStoryController">
+   <children>
+      <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="addButton" layoutX="524.0" layoutY="345.0" mnemonicParsing="false" onAction="#AddNewEvent" text="+" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="524.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="345.0" />
+      <Button fx:id="reloadButton" layoutX="469.0" layoutY="345.0" mnemonicParsing="false" onAction="#ReloadEvent" text="↻" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="469.0" AnchorPane.rightAnchor="88.0" AnchorPane.topAnchor="345.0" />
+   </children>
+</AnchorPane>
